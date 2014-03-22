@@ -1,0 +1,138 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.left{ float:left !important; }
+
+.clear{ clear: both; }
+
+a{
+  position: relative;
+  color: rgb(14, 165, 160);
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+a::after, a::before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgb(14, 165, 160);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+a::after{
+  bottom: 0;
+  transform: translateX(25px);
+  -webkit-transform: translateX(25px);
+  -moz-transform: translateX(25px);
+}
+
+a::before{
+  top: 0;
+  transform: translateX(-25px);
+  -webkit-transform: translateX(-25px);
+  -moz-transform: translateX(-25px);
+}
+
+a:hover::before, a:focus::before, a:hover::after, a:focus::after{
+  opacity: 1;
+  transform: translateX(0px);  
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+}
+
+#container{
+  width: 100%;
+  min-width: 450px;
+  height: 100%;
+  overflow-x: hidden;
+  background: #B4B4B4 url(workplace.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.inner{
+  position: relative;
+  max-width: 1200px;
+  padding: 5%;
+  margin: 100px auto;
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+}
+
+
+h1{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 90px;
+  font-weight: 200;
+  margin-right: 5%;
+  margin-bottom: 50px;
+}
+
+h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  color: #B4B4B4;
+  max-width: 880px;
+}
+
+p{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 880px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+#experience p{ margin-bottom: 30px; }
+
+#experience :last-child{ margin-bottom: 50px; }
+
+#education p, #contacts p{ line-height: 2.2; }
+
+#education .key, #contacts .key{
+  display: block;
+  width: 130px;
+}
+
+.cyan{
+  color: rgb(14, 165, 160);
+}
+
+p .cyan{
+  font-weight: bold;
+}
+
+
+.portrait{
+  border-radius: 140px;
+  width: 240px;
+  display: block;
+  margin: 0 auto 50px;
+}
+
+.portrait.small{ 
+  width: 70px; 
+  margin: 10px 0 auto;
+}
+
+.recommender{
+  display: block;
+  margin: 20px 20px 0 0;  
+}
+
