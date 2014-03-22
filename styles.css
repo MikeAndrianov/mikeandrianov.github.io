@@ -8,6 +8,7 @@
 .clear{ clear: both; }
 
 a{
+  font-size: 17px;
   position: relative;
   color: rgb(14, 165, 160);
   text-decoration: none;
@@ -70,6 +71,7 @@ a:hover::before, a:focus::before, a:hover::after, a:focus::after{
   padding: 5%;
   margin: 100px auto;
   background-color: rgba(0,0,0,0.75);
+  font-size: 17px;
   color: white;
 }
 
