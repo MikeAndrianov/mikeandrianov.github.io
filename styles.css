@@ -47,7 +47,7 @@ a::before{
 
 a:hover::before, a:focus::before, a:hover::after, a:focus::after{
   opacity: 1;
-  transform: translateX(0px);  
+  transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
 }
@@ -97,13 +97,12 @@ p{
   font-size: 17px;
   line-height: 1.6;
   max-width: 880px;
-  margin-bottom: 50px;
   text-align: justify;
 }
 
-#experience p{ margin-bottom: 30px; }
-
-#experience :last-child{ margin-bottom: 50px; }
+section {
+  margin-bottom: 50px;
+}
 
 #education p, #contacts p{ line-height: 2.2; }
 
@@ -129,13 +128,19 @@ p .cyan{
   margin: 0 auto 50px;
 }
 
-.portrait.small{ 
-  width: 70px; 
+.portrait.small{
+  width: 70px;
   margin: 10px 0 auto;
 }
 
 .recommender{
   display: block;
-  margin: 20px 20px 0 0;  
+  margin: 20px 20px 0 0;
 }
 
+.experience {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 5em;
+  row-gap: 30px;
+}
