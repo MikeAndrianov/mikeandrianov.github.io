@@ -78,14 +78,17 @@ article.container {
   color: inherit;
 }
 
-.button.button-outline {
+.button.button-large {
   height: 10rem;
   padding: 0 19rem;
-  border: 0.1rem solid #D8D8D8;
   line-height: 10rem;
 }
 
-.button.button-clear:hover, .button.button-outline:hover {
+input[type="submit"].button-outline, .button.button-outline {
+  border: 0.1rem solid #D8D8D8;
+}
+
+.button.button-clear:hover, .button.button-outline:hover, input[type="submit"].button-outline:hover {
   color: #FF018A;
 }
 
@@ -100,6 +103,39 @@ article.container {
 
 .wide-button .button.button-outline {
   width: 100%;
+}
+
+form .subscribe-input {
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  border-top-right-radius: 0;
+  font-size: 2.6rem;
+  height: 8rem;
+  border: 0.1rem solid #D8D8D8;
+  padding: 2rem;
+  color: inherit;
+  width: 100%;
+}
+
+form .subscribe-input:focus {
+  border-color: #FF018A;
+}
+
+form input.button.subscribe-button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+  height: 8rem;
+  color: #C3C3C3;
+  text-transform: none;
+  color: inherit;
+  font-size: 2.6rem;
+  font-weight: normal;
+}
+
+form input.button.subscribe-button:hover, form input.button.subscribe-button:focus {
+  border-color: #FF018A;
+  color: #FF018A;
 }
 
 #hamburger { display: none; }
@@ -142,6 +178,10 @@ nav input:checked ~ #nav_items { display: block; }
   .wide-button .button.button-outline {
     width: auto;
     padding: 0 25rem;
+  }
+
+  form .subscribe-input {
+    max-width: 70rem;
   }
 
   #nav_items{
