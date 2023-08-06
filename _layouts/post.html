@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> {{ page.title }} </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <meta name="author" content="Mike Andrianov">
+  <meta name="description" content="{{ page.title | append: ' Mike Andrianov' }}">
+</head>
+
+<body>
+  <header class="container clearfix">
+    {% include navigation.html %}
+  </header>
+
+  <article class="container">
+    <center><h1 class="mb-8">{{ page.title}}</h1></center>
+    {{ content }}
+  </article>
+
+  {% include subscription.html %}
+</body>
+</html>

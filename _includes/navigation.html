@@ -1,0 +1,10 @@
+<nav>
+  <label for="hamburger" class="float-right">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+
+  <div id="nav_items">
+    {% for item in site.data.navigation %}
+      <a href={{ item.link }} class="button button-clear">{{ item.name }}</a>
+    {% endfor %}
+  </div>
+</nav>

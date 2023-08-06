@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> {{ page.title }} </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <meta name="author" content="Mike Andrianov">
+  <meta name="description" content="I'm software developer specialized on Ruby, Elixir and Javascript. Let's create something gorgeous together.">
+</head>
+
+<body>
+  <header class="container clearfix">
+    {% include navigation.html %}
+
+    <div class="float-left">
+      {% if page.header == "index" %}
+        <h2 class="mb-0">Mike Andrianov</h2>
+        software developer, creator
+      {% else %}
+        <h2 class="mb-0">{{page.header}}</h2>
+      {% endif %}
+    </div>
+  </header>
+
+  {{ content }}
+</body>
+</html>
