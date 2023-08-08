@@ -4,9 +4,9 @@
 - title: Stimulus.js as a great minimalistic framework
   link: https://medium.com/coverwallet-engineering/stimulus-js-as-a-great-minimalistic-framework-681f87a46874
   excerpt: Sometimes, using advanced js frameworks or libraries like React is too much. But what if writing on pure javascript feels complex and not reusable? I explain how stimulus.js may help to get things done quickly and efficiently without overhead, which usually comes with more advanced frameworks.
-- title: Beautify Ruby code with #then
+- title: "Beautify Ruby code with #then"
   link: https://medium.com/coverwallet-engineering/beautify-ruby-code-with-then-f1d8419f4fd1
-  excerpt: Sometimes you can improve code readability simply by applying #then method. This article describes what this method does and when it makes sense to use it.
+  excerpt: "Sometimes you can improve code readability simply by applying #then method. This article describes what this method does and when it makes sense to use it."
 - title: Building real-time search with Phoenix LiveView
   link: https://medium.com/@Mike_Andr/building-real-time-search-with-phoenix-liveview-8b7c5f2374e5
   excerpt: Phoenix  LiveView provides real-time user experience with server-rendered HTML, which helps to build modern interactive applications. Check how to implement real-time search using this technology in a very elegant and simple form.
