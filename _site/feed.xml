@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-13T19:14:46+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Static website creation on Jekyll with ease</title><link href="http://localhost:4000/create-static-website-with-jekyll.html" rel="alternate" type="text/html" title="Static website creation on Jekyll with ease" /><published>2023-07-01T23:31:51+02:00</published><updated>2023-07-01T23:31:51+02:00</updated><id>http://localhost:4000/create-static-website-with-jekyll</id><content type="html" xml:base="http://localhost:4000/create-static-website-with-jekyll.html"><![CDATA[<p>I’ve always enjoyed sharing my knowledge, thoughts, and ideas with others. As soon as I matured as a software engineer, I decided to create an account on Medium and start writing about topics that intrigued me and could be of interest to others.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-13T21:40:02+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Static website creation on Jekyll with ease</title><link href="http://localhost:4000/create-static-website-with-jekyll.html" rel="alternate" type="text/html" title="Static website creation on Jekyll with ease" /><published>2023-07-01T23:31:51+02:00</published><updated>2023-07-01T23:31:51+02:00</updated><id>http://localhost:4000/create-static-website-with-jekyll</id><content type="html" xml:base="http://localhost:4000/create-static-website-with-jekyll.html"><![CDATA[<p>I’ve always enjoyed sharing my knowledge, thoughts, and ideas with others. As soon as I matured as a software engineer, I decided to create an account on Medium and start writing about topics that intrigued me and could be of interest to others.</p>
 
 <p>However, nowadays more and more content becomes hidden behind the paywall. This led me to seek an alternative platform for my humble content.
 Although I typically prefer ready-made solutions over reinventing the wheel, this time though
@@ -18,7 +18,7 @@ I host my page on GitHub pages and ideally wanted to continue as this is more th
 my needs.</p>
   </li>
   <li>
-    <p><strong>Customizeble</strong> <br />
+    <p><strong>Customizable</strong> <br />
 Maybe tomorrow I will add another page with a nice-looking gallery with images of unicorns. Who knows.</p>
   </li>
 </ol>
@@ -162,7 +162,7 @@ Is used for storing page-specific information. Any data specified via Front Matt
 
 <h3 id="data">Data</h3>
 
-<p>You can create custom data files (in JSON, YAML, CSV, and TSV formats), which should be located in <code class="language-plaintext highlighter-rouge">\_data</code> directory.
+<p>You can create custom data files (in JSON, YAML, CSV, and TSV formats), which should be located in <code class="language-plaintext highlighter-rouge">_data</code> directory.
 Later inside pages it can be accessed via <code class="language-plaintext highlighter-rouge">site.data</code> variable.
 Let’s think about when it may be useful.
 Consider a situation where you wish to incorporate a special gallery featuring unicorns. By creating a dedicated data file

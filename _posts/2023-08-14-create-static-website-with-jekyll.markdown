@@ -23,7 +23,7 @@ I host my page on GitHub pages and ideally wanted to continue as this is more th
 my needs.
 
 
-3. **Customizeble** \
+3. **Customizable** \
 Maybe tomorrow I will add another page with a nice-looking gallery with images of unicorns. Who knows.
 
 
@@ -174,7 +174,7 @@ Later specified variables can be accessed like so:
 
 ### Data
 
-You can create custom data files (in JSON, YAML, CSV, and TSV formats), which should be located in `\_data` directory.
+You can create custom data files (in JSON, YAML, CSV, and TSV formats), which should be located in `_data` directory.
 Later inside pages it can be accessed via `site.data` variable.
 Let's think about when it may be useful.
 Consider a situation where you wish to incorporate a special gallery featuring unicorns. By creating a dedicated data file
@@ -191,7 +191,7 @@ for these unicorn profiles, you can maintain a structured repository of details 
     about: Likes walking in the forrest.
   - name: Patricia
     img: imgs/patricia_unicorn.jpg
-    about: Used to live in montains.
+    about: Used to live in mountains.
   - name: Kyle Jr
     img: imgs/kyle_unicorn.jpg
     about: Eats grass and pine cones.
