@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Static website creation on Jekyll with ease </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/post_styles.css">
+
+  <meta name="author" content="Mike Andrianov">
+  <meta name="description" content="Static website creation on Jekyll with ease Mike Andrianov">
+</head>
+
+<body>
+  <header class="container clearfix">
+    <nav>
+  <label for="hamburger" class="float-right">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+
+  <div id="nav_items">
+    
+      <a href=/ class="button button-clear">Home</a>
+    
+      <a href=/blog class="button button-clear">Blog</a>
+    
+      <a href=/about class="button button-clear">About</a>
+    
+  </div>
+</nav>
+
+  </header>
+
+  <article class="container">
+    <center><h1 class="mb-8">Static website creation on Jekyll with ease</h1></center>
+    <p>I’ve always enjoyed sharing my knowledge, thoughts, and ideas with others. As soon as I matured as a software engineer, I decided to create an account on Medium and start writing about topics that intrigued me and could be of interest to others.</p>
+
+<p>However, nowadays more and more content becomes hidden behind the paywall. This led me to seek an alternative platform for my humble content.
+Although I typically prefer ready-made solutions over reinventing the wheel, this time though
+I felt the urge to redesign my personal website for the first time in ten years. existence. The idea of creating a small static website with personal information and a blog seemed fitting.
+Being an experienced Ruby (and Rails) developer, I was thrilled to leverage my acquired knowledge and finally craft a <a href="https://www.youtube.com/watch?v=Gzj723LkRJY">blog in 15 minutes</a>! Just before writing the cherished <code class="language-plaintext highlighter-rouge">rails new blog</code>, I swiftly researched on out-of-the-box solutions for static websites. Why invest 15 minutes when merely 5 minutes could suffice with the aid of a specific tool? Of course, neither 5 nor 15 minutes can yield something truly meaningful, but you got the idea, right?</p>
+
+<p>I formulated the next criteria:</p>
+<ol>
+  <li>
+    <p><strong>Lightweight and easy to use</strong> <br />
+Something, which allows to hit the ground running without spending too much time reading
+documentation.</p>
+  </li>
+  <li>
+    <p><strong>Easy to host</strong> <br />
+I host my page on GitHub pages and ideally wanted to continue as this is more than enough for
+my needs.</p>
+  </li>
+  <li>
+    <p><strong>Customizeble</strong> <br />
+Maybe tomorrow I will add another page with a nice-looking gallery with images of unicorns. Who knows.</p>
+  </li>
+</ol>
+
+<p>Once I crystallized these criteria, the answer poped out from my mind. I have read about
+<a href="https://jekyllrb.com">Jekyll</a> some time ago. It turned out it was a great candidate that met my needs. The bonus point was
+that it is written in Ruby! Please don’t drop this article if you are not familiar with Ruby as it turned out that besides Ruby itself
+it only needed to install a gem and start the project:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">gem</span> <span class="n">install</span> <span class="n">bundler</span> <span class="n">jekyll</span>
+  <span class="n">jekyll</span> <span class="n">new</span> <span class="n">my</span><span class="o">-</span><span class="n">site</span>
+  <span class="n">cd</span> <span class="n">my</span><span class="o">-</span><span class="n">site</span>
+  <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span> <span class="o">--</span><span class="n">livereload</span></code></pre></figure>
+
+<p>“Why choose Jekyll over writing plain HTML?” you may wonder. Because it supports some convenient features, which simplify development:
+layouts, templates with Liquid, ability to create content not only in HTML, but also using Markdown and the easiest deployment
+to GitHub pages. Let’s go through everything in order.</p>
+
+<h3 id="pages">Pages</h3>
+
+<p>The most essential part of building a static website. They can be written in HTML or Markdown.
+Some examples of pages: <code class="language-plaintext highlighter-rouge">index.html</code>, <code class="language-plaintext highlighter-rouge">blog.html</code>, <code class="language-plaintext highlighter-rouge">about.markdown</code>, etc. Just drop these files into
+the root of the project. Also, pages can also be organized into subfolders, if some organization is required.</p>
+
+<h3 id="configuration">Configuration</h3>
+
+<p>Basic configuration can be set in <code class="language-plaintext highlighter-rouge">_config.yml</code>. Sometimes it’s needed to set a custom configuration for a specific page or post.
+For such cases, Jekyll provides the tool called Front Matter. It can be used for setting predefined global variables like
+title and layout, as well as any other custom variable you need.</p>
+
+<p>To implement Front Matter, place YAML-formatted configurations at the top of the page, encased within three-dashed lines:</p>
+
+<p>about.html</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
+<span class="ss">layout: </span><span class="n">default</span>
+<span class="ss">title: </span><span class="no">Custom</span> <span class="n">title</span>
+<span class="ss">header: </span><span class="no">About</span>
+<span class="o">---</span>
+
+<span class="o">&lt;</span><span class="n">article</span><span class="o">&gt;</span>
+  <span class="no">About</span> <span class="n">me</span>
+<span class="o">&lt;</span><span class="sr">/article&gt;</span></code></pre></figure>
+
+<h3 id="includes">Includes</h3>
+
+<p>Repeatetive chunks of code can be extracted and organized within the <code class="language-plaintext highlighter-rouge">_includes</code> directory and included wherever needed.
+Here are couple of examples of what make sense to move there: navigation, email subscription form, footer and so on.
+Use <code class="language-plaintext highlighter-rouge">include</code> or <code class="language-plaintext highlighter-rouge">include_relative</code> directives to insert partial into the page.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">...</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">header</span><span class="o">&gt;</span>
+    <span class="p">{</span><span class="sx">% include </span><span class="n">nav</span><span class="p">.</span><span class="nf">html</span> <span class="sx">%}
+  &lt;/header&gt;
+  ...
+&lt;/body&gt;</span></code></pre></figure>
+
+<h3 id="liquid-templates">Liquid templates</h3>
+
+<p>While reading the example above you might wonder about the usage of <code class="language-plaintext highlighter-rouge">{% ... %}</code>. Indeed, this doesn’t
+look like a pure HTML.
+And you are right: Jekyll uses open-source template language called Liquid.
+If you’re unfamiliar with it, all you need to know is that variables enclosed within double curly brackets, such as
+<code class="language-plaintext highlighter-rouge">{{ page.title }}</code> will be rendered on a page. The code situated between curly bracket and percent
+<code class="language-plaintext highlighter-rouge">{% if author %}</code> is not displayed on the page, but is used as control flow structure. More information
+you can find in <a href="https://shopify.github.io/liquid">the official documentation</a>.</p>
+
+<h3 id="layouts">Layouts</h3>
+
+<p>Serve for containing basic repetitive code for pages, wrap content from pages. Loading of all necessary css and js files
+is done there. For instance, consider the following layout template:</p>
+
+<p>_layouts/default.html</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>{{ page.title }}<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/assets/css/styles.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;header&gt;</span>
+    {% include navigation.html %}
+
+    <span class="nt">&lt;h2&gt;</span>{{page.header}}<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+
+  {{ content }}
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<p>The content of a page will be rendered in place of <code class="language-plaintext highlighter-rouge">{{ content }}</code> variable.</p>
+
+<h3 id="variables">Variables</h3>
+
+<p>Any file that includes Front Matter, is processed by Jekyll, allowing to use variables in your templates.
+Here are main types of variables:</p>
+
+<ol>
+  <li>
+    <p><strong>site</strong> <br />
+This variable contains configuration elements sourced from <code class="language-plaintext highlighter-rouge">_config.yml</code> as well as global information.
+Here are example of what can be accessed through it: <code class="language-plaintext highlighter-rouge">site.data</code> – data loaded from the <code class="language-plaintext highlighter-rouge">_data</code> directory,
+<code class="language-plaintext highlighter-rouge">site.pages</code>, <code class="language-plaintext highlighter-rouge">site.posts</code>, <code class="language-plaintext highlighter-rouge">site.&lt;config&gt;</code> and so on.</p>
+  </li>
+  <li>
+    <p><strong>paginator</strong> <br />
+Is used for simplifying work with pagination: <code class="language-plaintext highlighter-rouge">paginator.page</code>, <code class="language-plaintext highlighter-rouge">paginator.total_pages</code>, <code class="language-plaintext highlighter-rouge">paginator.next_page</code>, etc.</p>
+  </li>
+  <li>
+    <p><strong>page</strong> <br />
+Is used for storing page-specific information. Any data specified via Front Matter in a given page resides within this variable.</p>
+  </li>
+</ol>
+
+<p>about.html</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
+<span class="ss">title: </span><span class="no">Custom</span> <span class="n">title</span>
+<span class="ss">header: </span><span class="no">About</span>
+<span class="o">---</span>
+
+<span class="o">&lt;</span><span class="n">article</span><span class="o">&gt;</span>
+  <span class="no">About</span> <span class="n">me</span>
+<span class="o">&lt;</span><span class="sr">/article&gt;
+...</span></code></pre></figure>
+
+<p>Later specified variables can be accessed like so:</p>
+
+<p>_layouts/default.html</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span> {{ page.title }} <span class="nt">&lt;/title&gt;</span>
+  ...
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>{{page.header}}<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
+
+<h3 id="data">Data</h3>
+
+<p>You can create custom data files (in JSON, YAML, CSV, and TSV formats), which should be located in <code class="language-plaintext highlighter-rouge">\_data</code> directory.
+Later inside pages it can be accessed via <code class="language-plaintext highlighter-rouge">site.data</code> variable.
+Let’s think about when it may be useful.
+Consider a situation where you wish to incorporate a special gallery featuring unicorns. By creating a dedicated data file
+for these unicorn profiles, you can maintain a structured repository of details that can be nicely integrated into your pages.</p>
+
+<p>_data/unicorns.yml</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  - name: Bob
+    img: imgs/bob_unicorn.jpg
+    about: Likes walking in the forrest.
+  - name: Patricia
+    img: imgs/patricia_unicorn.jpg
+    about: Used to live in montains.
+  - name: Kyle Jr
+    img: imgs/kyle_unicorn.jpg
+    about: Eats grass and pine cones.</code></pre></figure>
+
+<p>index.html</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">{% for unicorn in site.data.unicorns %}
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>{{ unicorn.name }}<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>{{ unicorn.about }}<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">{{</span> <span class="na">unicorn.img</span> <span class="err">}}</span> <span class="err">\</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+{% endfor %}</code></pre></figure>
+
+<h3 id="posts">Posts</h3>
+
+<p>Jekyll offers a straightforward method for creating a blog. Just drop HTML or Markdown files into <code class="language-plaintext highlighter-rouge">_posts</code> directory. Files
+should be named in a specific format: <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code>, or <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.html</code>. At the top of the most, you can
+also use Front Matter:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span>  <span class="s">Static website creation on Jekyll with ease</span>
+<span class="na">date</span><span class="pi">:</span>   <span class="s">2023-07-01 23:31:51 +0200</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="s">static websites</span>
+<span class="nn">---</span>
+
+<span class="s">Some **useful** content.</span></code></pre></figure>
+
+<p>Now it’s time to render posts.</p>
+
+<p>blog.html</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">{% for post in site.posts %}
+  <span class="nt">&lt;article&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">{{</span> <span class="na">post.url</span> <span class="err">}}</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h1&gt;</span>{{ post.title }}<span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;p&gt;</span>{{ post.excerpt }}<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+{% endfor %}</code></pre></figure>
+
+<h3 id="deployment">Deployment</h3>
+
+<p>It turned out GitHub pages support Jekyll out of the box. Simply commit and push all your changes.
+Everything else will handled by GitHub. Nice and easy!</p>
+
+<p><br />
+That’s all what I wanted to share today. Thank you for reading my post.
+If you are interested in diving a bit deeper, I highly recomend to check out
+<a href="https://jekyllrb.com/docs/">official documentation</a>.</p>
+
+  </article>
+
+  <div class="container">
+  <form action="https://github.us21.list-manage.com/subscribe/post?u=be4c1059a647a4bcd23bf6166&amp;id=f27589f2ab&amp;f_id=007ea0e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_self">
+    <div id="mc_embed_signup_scroll">
+      <small>Subscribe to my future posts</small>
+
+      <div class="row">
+        <input type="email" value="" placeholder="Type your email…" name="EMAIL" class="subscribe-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-outline subscribe-button">
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be4c1059a647a4bcd23bf6166_f27589f2ab" tabindex="-1" value=""></div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
