@@ -9,8 +9,8 @@ header: index
 {% for post in site.posts %}
   <article class="container">
     <a href={{ post.url }}>
-      <h1>{{ post.title}}</h1>
-      <p>{{ post.excerpt}}
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.excerpt }}</p>
     </a>
   </article>
 {% endfor %}
@@ -18,8 +18,8 @@ header: index
 {% for featured_post in site.data.featured_posts %}
   <article class="container">
     <a href={{ featured_post.link }}>
-      <h1>{{ featured_post.title}}</h1>
-      <p>{{ featured_post.excerpt}}
+      <h1>{{ featured_post.title }}</h1>
+      <p>{{ featured_post.excerpt }}</p>
     </a>
   </article>
 {% endfor %}

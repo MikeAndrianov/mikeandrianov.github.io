@@ -6,6 +6,15 @@ header: Blog
 
 {% include subscription.html %}
 
+{% for post in site.posts %}
+  <article class="container">
+    <a href={{ post.url }}>
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.excerpt }}</p>
+    </a>
+  </article>
+{% endfor %}
+
 <article class="container">
   <a href="https://medium.com/coverwallet-engineering/rack-in-questions-and-answers-6f6169bc798a">
     <h1>Rack in questions and answers</h1>

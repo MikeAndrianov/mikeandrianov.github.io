@@ -6,7 +6,7 @@
 body {
   background-color: #1E1E1E;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: 3.6rem;
+  font-size: 5rem;
   color: #C3C3C3;
 }
 
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 9rem;
   color: #FF018A;
 }
 
@@ -64,18 +64,27 @@ h3 {
 
 .container {
   margin: 2rem auto;
-  max-width: 160rem;
+  max-width: 130rem;
 }
 
+article {
+  text-align: justify;
+}
 article.container {
   margin-bottom: 12rem;
 }
 article pre {
   background: #363636;
-  border-left: 0.4rem solid #FF018A;
+  border-left: 1rem solid #FF018A;
 }
-article pre > code {
-  font-size: 2.3rem;
+article ol li {
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+}
+article ol li > p {
+  display: inline;
+  vertical-align: top;
+  max-width: 120rem;
 }
 article code {
   background: #363636;
@@ -190,9 +199,29 @@ nav input:checked ~ #nav_items {
   display: block;
 }
 
+@media (min-width: 120rem) {
+  .container {
+    max-width: 160rem;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+}
 @media (min-width: 80rem) {
+  body {
+    font-size: 3.2rem;
+  }
   .container {
     margin: 6rem auto;
+  }
+  article {
+    text-align: initial;
+  }
+  article pre {
+    border-left: 0.4rem solid #FF018A;
+  }
+  article pre > code {
+    font-size: 2.3rem;
   }
   .wide-button .button.button-outline {
     width: auto;

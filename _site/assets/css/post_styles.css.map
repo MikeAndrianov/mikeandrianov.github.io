@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../_sass/post.scss"],"names":[],"mappings":"AACE;EACE;;AAGF;EACE","sourcesContent":["article {\n  a {\n    text-decoration: underline;\n  }\n\n  h3 {\n    margin-top: 4rem;\n  }\n}\n"],"file":"post_styles.css"}
