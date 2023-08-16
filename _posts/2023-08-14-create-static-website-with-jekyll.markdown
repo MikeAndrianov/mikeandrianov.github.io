@@ -9,7 +9,7 @@ I've always enjoyed sharing my knowledge, thoughts, and ideas with others. As so
 
 However, nowadays more and more content becomes hidden behind the paywall. This led me to seek an alternative platform for my humble content.
 Although I typically prefer ready-made solutions over reinventing the wheel, this time though
-I felt the urge to redesign my personal website for the first time in ten years. existence. The idea of creating a small static website with personal information and a blog seemed fitting.
+I felt the urge to redesign my personal website for the first time in ten years of its existence. The idea of creating a small static website with personal information and a blog seemed fitting.
 Being an experienced Ruby (and Rails) developer, I was thrilled to leverage my acquired knowledge and finally craft a [blog in 15 minutes](https://www.youtube.com/watch?v=Gzj723LkRJY)! Just before writing the cherished `rails new blog`, I swiftly researched on out-of-the-box solutions for static websites. Why invest 15 minutes when merely 5 minutes could suffice with the aid of a specific tool? Of course, neither 5 nor 15 minutes can yield something truly meaningful, but you got the idea, right?
 
 I formulated the next criteria:
