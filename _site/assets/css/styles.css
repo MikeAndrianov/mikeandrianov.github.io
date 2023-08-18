@@ -67,9 +67,6 @@ h3 {
   max-width: 130rem;
 }
 
-article {
-  text-align: justify;
-}
 article.container {
   margin-bottom: 12rem;
 }
@@ -213,9 +210,6 @@ nav input:checked ~ #nav_items {
   }
   .container {
     margin: 6rem auto;
-  }
-  article {
-    text-align: initial;
   }
   article pre {
     border-left: 0.4rem solid #FF018A;

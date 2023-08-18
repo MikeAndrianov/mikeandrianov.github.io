@@ -68,8 +68,6 @@ h3 {
 }
 
 article {
-  text-align: justify;
-
   &.container {
     margin-bottom: 12rem;
   }
@@ -228,8 +226,6 @@ nav input:checked ~ #nav_items { display: block; }
   }
 
   article {
-    text-align: initial;
-
     pre {
       border-left: 0.4rem solid #FF018A;
 
