@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-11-26T15:27:25+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Why seniors often reject proposals from less experienced colleagues</title><link href="http://localhost:4000/why-do-seniors-reject-new-ideas.html" rel="alternate" type="text/html" title="Why seniors often reject proposals from less experienced colleagues" /><published>2023-11-26T01:45:00+01:00</published><updated>2023-11-26T01:45:00+01:00</updated><id>http://localhost:4000/why-do-seniors-reject-new-ideas</id><content type="html" xml:base="http://localhost:4000/why-do-seniors-reject-new-ideas.html"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-01T20:13:45+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Why seniors often reject proposals from less experienced colleagues</title><link href="http://localhost:4000/why-do-seniors-reject-new-ideas.html" rel="alternate" type="text/html" title="Why seniors often reject proposals from less experienced colleagues" /><published>2023-11-26T01:45:00+01:00</published><updated>2023-11-26T01:45:00+01:00</updated><id>http://localhost:4000/why-do-seniors-reject-new-ideas</id><content type="html" xml:base="http://localhost:4000/why-do-seniors-reject-new-ideas.html"><![CDATA[<blockquote>
   <p>“It’s so annoying to work with senior developers in my team. I encourage them to try to introduce a new technology / framework / approach, but they always push back, like they don’t want anything.”</p>
 </blockquote>
 
@@ -54,7 +54,89 @@ to a production environment, perhaps even attracting some real users.
 This not only improves your technical skills but also provides insights into product development, marketing strategies, and other areas.
 Broader perspective can substantially boost your career in the future.</p>
 
-<p>Questions or thoughts? Please feel free to <a href="mailto:mikeandrianov@gmail.com">drop me a letter</a>.</p>]]></content><author><name></name></author><category term="opinion" /><summary type="html"><![CDATA[Here's my take on why seasoned developers often turn down suggestions from less experienced colleagues, along with some guidance on how to navigate this situation.]]></summary></entry><entry><title type="html">Static website creation on Jekyll with ease</title><link href="http://localhost:4000/create-static-website-with-jekyll.html" rel="alternate" type="text/html" title="Static website creation on Jekyll with ease" /><published>2023-07-01T23:31:51+02:00</published><updated>2023-07-01T23:31:51+02:00</updated><id>http://localhost:4000/create-static-website-with-jekyll</id><content type="html" xml:base="http://localhost:4000/create-static-website-with-jekyll.html"><![CDATA[<p>I’ve always enjoyed sharing my knowledge, thoughts, and ideas with others. As soon as I matured as a software engineer, I decided to create an account on Medium and start writing about topics that intrigued me and could be of interest to others.</p>
+<p>Questions or thoughts? Please feel free to <a href="mailto:mikeandrianov@gmail.com">drop me a letter</a>.</p>]]></content><author><name></name></author><category term="opinion" /><summary type="html"><![CDATA[Here's my take on why seasoned developers often turn down suggestions from less experienced colleagues, along with some guidance on how to navigate this situation.]]></summary></entry><entry><title type="html">Overcoming irregular delivery</title><link href="http://localhost:4000/overcoming-irregular-delivery.html" rel="alternate" type="text/html" title="Overcoming irregular delivery" /><published>2023-11-26T01:45:00+01:00</published><updated>2023-11-26T01:45:00+01:00</updated><id>http://localhost:4000/overcoming-irregular-delivery</id><content type="html" xml:base="http://localhost:4000/overcoming-irregular-delivery.html"><![CDATA[<p>Lately, my mentee and I have been focused on enhancing impact within the team. One goal we set was to improve reliability and visibility by starting to deliver regularly. 
+Ideally, we would be delivering at least one commit daily even though it doesn’t necessarily mean to close a new ticket each day.</p>
+
+<p>To assist my mentee in overcoming potential obstacles that might stop him from accomplishing the goal, I have created a diagram, which I decided to share with the wider audience as I believe it can be useful for more engineers.</p>
+
+<p>I broke the abstract “can’t commit daily” question into the 3 main sections:</p>
+
+<ol>
+  <li>
+    <p><strong>Problems</strong> <br />
+What prevents engineers from regular delivery. Often, these are the responses you’d receive when inquiring about the delay in completing a feature.</p>
+  </li>
+  <li>
+    <p><strong>Root causes</strong> <br />
+Identifying the root causes that give rise to issues in the delivery process.</p>
+  </li>
+  <li>
+    <p><strong>Solutions</strong> <br />
+Offering practical solutions for addressing each of the identified root causes. These serve as recipes for overcoming the challenges associated with regular delivery.</p>
+  </li>
+</ol>
+
+<p><a href="/assets/img/irregular-delivery-diagram.png"><img src="/assets/img/irregular-delivery-diagram.png" alt="Irregular delivery diagram" /></a></p>
+
+<h2 id="problem-1-tickets-complexity">Problem 1. Ticket’s complexity</h2>
+
+<p>Addressing this challenge can indeed be tricky, and it requires a thorough identification of the root causes.
+Let’s go through the most popular root causes one by one.</p>
+
+<h3 id="1-unclear-requirements">1. <strong>Unclear requirements</strong></h3>
+<p>Engineer dove into feature development without a comprehensive understanding of the outcome, resulting in numerous iterations or, in extreme cases, 
+the need for complete rebuilding of the delivered work. 
+Ideally, initiating work should only commence when the final goal is crystal clear, well-understood, and logically sound. 
+Depending on the feature, it may be beneficial to also include such things as the acceptance criteria, development breakdown, link to the design, etc.</p>
+
+<p><strong>Solution:</strong> don’t be shy and seek input from relevant colleagues, including product managers, designers, other developers, and stakeholders. Don’t hesitate to request additional details until the requirements are thoroughly clarified.
+Proactively seek input from relevant colleagues, including product managers, designers, fellow developers, and stakeholders. Don’t hesitate to request additional details until the requirements are thoroughly clarified. 
+Open communication ensures a comprehensive understanding of the project, reducing the likelihood of ambiguity and facilitating smoother development processes.</p>
+
+<h3 id="2-ticket-is-too-big">2. <strong>Ticket is too big</strong></h3>
+<p>In some cases, a ticket may be well-defined from a business perspective, yet engineers working on it might encounter challenges with the delivery. 
+Some people may develop locally and only commit changes when they finish the ticket. 
+Additionally, based on my observations, the review process tends to slow down as the size of the corresponding pull request increases. 
+This, in turn, can lead to a prolonged period of stagnation in the review phase.</p>
+
+<p><strong>Solution:</strong> break down large tickets into smaller, more granular tasks, which are easier to understand, implement, review, and test.</p>
+
+<h3 id="3-ticket-is-too-difficult">3. <strong>Ticket is too difficult</strong></h3>
+<p>Even if a ticket is exceptionally well-defined, there are instances where it’s too challenging for the assigned individual to tackle it alone.</p>
+
+<p><strong>Solution:</strong> discuss with colleagues implementation details and set milestones. When necessary ask for the review while the pool request is still a draft.</p>
+
+<h2 id="problem-2-stuck-or-blocked">Problem 2. Stuck or blocked</h2>
+<p>Working in an environment of uncertainty is common, with potential issues like buggy libraries, missing documentation, and complex codebases. 
+Recognizing the right time to seek help is crucial to avoid unnecessary time wastage. 
+Please keep in mind, that before asking you did everything you could to resolve the problem by your own: 
+from googling and usage of AI tools to reading library and internal documentation. Asking for help should be the next step after giving your best shot at solving the problem independently.</p>
+
+<p><strong>Solution:</strong> ask for help.</p>
+
+<p>There are a couple of tricks to keep in mind, and how to do it properly to receive necessary help faster and effectively:</p>
+
+<ol>
+  <li>
+    <p><strong>Ask questions in public channels instead of pinging people directly</strong> <br />
+It increases the probability of resolving problems faster and also increases visibility. 
+That means a wider audience will know about your current status. This is especially important when working remotely.</p>
+  </li>
+  <li>
+    <p><strong>Specify as much information as possible</strong> <br />
+Don’t be afraid to overcommunicate. It’s always better to provide more information, rather than less. Please keep in mind, that other people need to understand the context and the problem quickly.
+Not everyone is eager to play ping-pong with additional questions and answers. So try to prevent it.
+Write an extensive description of what you have done so far, your conclusions, or suspicions. Share links to the ticket, code, logs, etc.</p>
+  </li>
+  <li>
+    <p><strong>Be proactive</strong> <br />
+After all you are responsible for resolving your issues. If nobody helps, don’t reassure yourself that you asked and can rest until someone finally help you. 
+Ping your team members, ask question in different channels, send follow-ups, do everything you can to facilitate resolving the issue.</p>
+  </li>
+</ol>
+
+<p><br />
+Do you struggle with something else and don’t know how to deal with it? <a href="mailto:mikeandrianov@gmail.com">Send me an email</a>. Perhaps I could help. It’s always worth asking.</p>]]></content><author><name></name></author><category term="mentorship" /><summary type="html"><![CDATA[What are the main problems, and root causes of non-regular delivery, and how do start delivering consistently as a software engineer? You can find answers in this article.]]></summary></entry><entry><title type="html">Static website creation on Jekyll with ease</title><link href="http://localhost:4000/create-static-website-with-jekyll.html" rel="alternate" type="text/html" title="Static website creation on Jekyll with ease" /><published>2023-07-01T23:31:51+02:00</published><updated>2023-07-01T23:31:51+02:00</updated><id>http://localhost:4000/create-static-website-with-jekyll</id><content type="html" xml:base="http://localhost:4000/create-static-website-with-jekyll.html"><![CDATA[<p>I’ve always enjoyed sharing my knowledge, thoughts, and ideas with others. As soon as I matured as a software engineer, I decided to create an account on Medium and start writing about topics that intrigued me and could be of interest to others.</p>
 
 <p>However, nowadays more and more content becomes hidden behind the paywall. This led me to seek an alternative platform for my humble content.
 Although I typically prefer ready-made solutions over reinventing the wheel, this time though

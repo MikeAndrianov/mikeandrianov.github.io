@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Overcoming irregular delivery </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/post_styles.css">
+
+  <meta name="author" content="Mike Andrianov">
+  <meta name="description" content="What are the main problems, and root causes of non-regular delivery, and how do start delivering consistently as a software engineer? You can find answers in this article.">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KED8YMLD5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KED8YMLD5');
+</script>
+
+
+<body>
+  <header class="container clearfix">
+    <nav>
+  <label for="hamburger" class="float-right">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+
+  <div id="nav_items">
+    
+      <a href=/ class="button button-clear">Home</a>
+    
+      <a href=/blog class="button button-clear">Blog</a>
+    
+      <a href=/about class="button button-clear">About</a>
+    
+  </div>
+</nav>
+
+  </header>
+
+  <article class="container">
+    <center><h1 class="mb-8">Overcoming irregular delivery</h1></center>
+    <p>Lately, my mentee and I have been focused on enhancing impact within the team. One goal we set was to improve reliability and visibility by starting to deliver regularly. 
+Ideally, we would be delivering at least one commit daily even though it doesn’t necessarily mean to close a new ticket each day.</p>
+
+<p>To assist my mentee in overcoming potential obstacles that might stop him from accomplishing the goal, I have created a diagram, which I decided to share with the wider audience as I believe it can be useful for more engineers.</p>
+
+<p>I broke the abstract “can’t commit daily” question into the 3 main sections:</p>
+
+<ol>
+  <li>
+    <p><strong>Problems</strong> <br />
+What prevents engineers from regular delivery. Often, these are the responses you’d receive when inquiring about the delay in completing a feature.</p>
+  </li>
+  <li>
+    <p><strong>Root causes</strong> <br />
+Identifying the root causes that give rise to issues in the delivery process.</p>
+  </li>
+  <li>
+    <p><strong>Solutions</strong> <br />
+Offering practical solutions for addressing each of the identified root causes. These serve as recipes for overcoming the challenges associated with regular delivery.</p>
+  </li>
+</ol>
+
+<p><a href="/assets/img/irregular-delivery-diagram.png"><img src="/assets/img/irregular-delivery-diagram.png" alt="Irregular delivery diagram" /></a></p>
+
+<h2 id="problem-1-tickets-complexity">Problem 1. Ticket’s complexity</h2>
+
+<p>Addressing this challenge can indeed be tricky, and it requires a thorough identification of the root causes.
+Let’s go through the most popular root causes one by one.</p>
+
+<h3 id="1-unclear-requirements">1. <strong>Unclear requirements</strong></h3>
+<p>Engineer dove into feature development without a comprehensive understanding of the outcome, resulting in numerous iterations or, in extreme cases, 
+the need for complete rebuilding of the delivered work. 
+Ideally, initiating work should only commence when the final goal is crystal clear, well-understood, and logically sound. 
+Depending on the feature, it may be beneficial to also include such things as the acceptance criteria, development breakdown, link to the design, etc.</p>
+
+<p><strong>Solution:</strong> don’t be shy and seek input from relevant colleagues, including product managers, designers, other developers, and stakeholders. Don’t hesitate to request additional details until the requirements are thoroughly clarified.
+Proactively seek input from relevant colleagues, including product managers, designers, fellow developers, and stakeholders. Don’t hesitate to request additional details until the requirements are thoroughly clarified. 
+Open communication ensures a comprehensive understanding of the project, reducing the likelihood of ambiguity and facilitating smoother development processes.</p>
+
+<h3 id="2-ticket-is-too-big">2. <strong>Ticket is too big</strong></h3>
+<p>In some cases, a ticket may be well-defined from a business perspective, yet engineers working on it might encounter challenges with the delivery. 
+Some people may develop locally and only commit changes when they finish the ticket. 
+Additionally, based on my observations, the review process tends to slow down as the size of the corresponding pull request increases. 
+This, in turn, can lead to a prolonged period of stagnation in the review phase.</p>
+
+<p><strong>Solution:</strong> break down large tickets into smaller, more granular tasks, which are easier to understand, implement, review, and test.</p>
+
+<h3 id="3-ticket-is-too-difficult">3. <strong>Ticket is too difficult</strong></h3>
+<p>Even if a ticket is exceptionally well-defined, there are instances where it’s too challenging for the assigned individual to tackle it alone.</p>
+
+<p><strong>Solution:</strong> discuss with colleagues implementation details and set milestones. When necessary ask for the review while the pool request is still a draft.</p>
+
+<h2 id="problem-2-stuck-or-blocked">Problem 2. Stuck or blocked</h2>
+<p>Working in an environment of uncertainty is common, with potential issues like buggy libraries, missing documentation, and complex codebases. 
+Recognizing the right time to seek help is crucial to avoid unnecessary time wastage. 
+Please keep in mind, that before asking you did everything you could to resolve the problem by your own: 
+from googling and usage of AI tools to reading library and internal documentation. Asking for help should be the next step after giving your best shot at solving the problem independently.</p>
+
+<p><strong>Solution:</strong> ask for help.</p>
+
+<p>There are a couple of tricks to keep in mind, and how to do it properly to receive necessary help faster and effectively:</p>
+
+<ol>
+  <li>
+    <p><strong>Ask questions in public channels instead of pinging people directly</strong> <br />
+It increases the probability of resolving problems faster and also increases visibility. 
+That means a wider audience will know about your current status. This is especially important when working remotely.</p>
+  </li>
+  <li>
+    <p><strong>Specify as much information as possible</strong> <br />
+Don’t be afraid to overcommunicate. It’s always better to provide more information, rather than less. Please keep in mind, that other people need to understand the context and the problem quickly.
+Not everyone is eager to play ping-pong with additional questions and answers. So try to prevent it.
+Write an extensive description of what you have done so far, your conclusions, or suspicions. Share links to the ticket, code, logs, etc.</p>
+  </li>
+  <li>
+    <p><strong>Be proactive</strong> <br />
+After all you are responsible for resolving your issues. If nobody helps, don’t reassure yourself that you asked and can rest until someone finally help you. 
+Ping your team members, ask question in different channels, send follow-ups, do everything you can to facilitate resolving the issue.</p>
+  </li>
+</ol>
+
+<p><br />
+Do you struggle with something else and don’t know how to deal with it? <a href="mailto:mikeandrianov@gmail.com">Send me an email</a>. Perhaps I could help. It’s always worth asking.</p>
+
+  </article>
+
+  <div class="container">
+  <form action="https://github.us21.list-manage.com/subscribe/post?u=be4c1059a647a4bcd23bf6166&amp;id=f27589f2ab&amp;f_id=007ea0e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_self">
+    <div id="mc_embed_signup_scroll">
+      <small>Subscribe to my future posts</small>
+
+      <div class="row">
+        <input type="email" value="" placeholder="Type your email…" name="EMAIL" class="subscribe-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-outline subscribe-button">
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be4c1059a647a4bcd23bf6166_f27589f2ab" tabindex="-1" value=""></div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
