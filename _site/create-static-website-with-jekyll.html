@@ -9,6 +9,13 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/post_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/elixir.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/ruby.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/yml.min.js"></script>
+  <script>hljs.highlightAll();</script>
 
   <meta name="author" content="Mike Andrianov">
   <meta name="description" content="Exploring my transition from Medium to a personal Jekyll-powered blog. Take a look if you want to effortlessly create a static website. You will find all the basics to get familiar with this tool.">
@@ -115,13 +122,13 @@ title and layout, as well as any other custom variable you need.</p>
 Here are couple of examples of what make sense to move there: navigation, email subscription form, footer and so on.
 Use <code class="language-plaintext highlighter-rouge">include</code> or <code class="language-plaintext highlighter-rouge">include_relative</code> directives to insert partial into the page.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">...</span>
-<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">header</span><span class="o">&gt;</span>
-    <span class="p">{</span><span class="sx">% include </span><span class="n">nav</span><span class="p">.</span><span class="nf">html</span> <span class="sx">%}
-  &lt;/header&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html">...
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;header&gt;</span>
+    {% include nav.html %}
+  <span class="nt">&lt;/header&gt;</span>
   ...
-&lt;/body&gt;</span></code></pre></figure>
+<span class="nt">&lt;/body&gt;</span></code></pre></figure>
 
 <h3 id="liquid-templates">Liquid templates</h3>
 
@@ -216,15 +223,15 @@ for these unicorn profiles, you can maintain a structured repository of details 
 
 <p>_data/unicorns.yml</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html">  - name: Bob
-    img: imgs/bob_unicorn.jpg
-    about: Likes walking in the forrest.
-  - name: Patricia
-    img: imgs/patricia_unicorn.jpg
-    about: Used to live in mountains.
-  - name: Kyle Jr
-    img: imgs/kyle_unicorn.jpg
-    about: Eats grass and pine cones.</code></pre></figure>
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml">  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Bob</span>
+    <span class="na">img</span><span class="pi">:</span> <span class="s">imgs/bob_unicorn.jpg</span>
+    <span class="na">about</span><span class="pi">:</span> <span class="s">Likes walking in the forrest.</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Patricia</span>
+    <span class="na">img</span><span class="pi">:</span> <span class="s">imgs/patricia_unicorn.jpg</span>
+    <span class="na">about</span><span class="pi">:</span> <span class="s">Used to live in mountains.</span>
+  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Kyle Jr</span>
+    <span class="na">img</span><span class="pi">:</span> <span class="s">imgs/kyle_unicorn.jpg</span>
+    <span class="na">about</span><span class="pi">:</span> <span class="s">Eats grass and pine cones.</span></code></pre></figure>
 
 <p>index.html</p>
 

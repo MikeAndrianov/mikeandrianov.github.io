@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Overcoming irregular delivery
-date:   2023-11-26 02:45:00 +0200
+date:   2024-02-01 02:45:00 +0200
 categories: mentorship
 excerpt: "What are the main problems, and root causes of non-regular delivery, and how do start delivering consistently as a software engineer? You can find answers in this article."
 ---

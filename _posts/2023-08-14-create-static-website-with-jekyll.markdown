@@ -78,7 +78,7 @@ Repeatetive chunks of code can be extracted and organized within the `_includes`
 Here are couple of examples of what make sense to move there: navigation, email subscription form, footer and so on.
 Use `include` or `include_relative` directives to insert partial into the page.
 
-{% highlight ruby %}
+{% highlight html %}
 ...
 <body>
   <header>
@@ -184,7 +184,7 @@ for these unicorn profiles, you can maintain a structured repository of details 
 \_data/unicorns.yml
 
 
-{% highlight html %}
+{% highlight yml %}
 {% raw %}
   - name: Bob
     img: imgs/bob_unicorn.jpg

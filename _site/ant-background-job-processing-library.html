@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-12T01:31:55+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Introducing Ant: a simple background job processing library for Elixir</title><link href="http://localhost:4000/ant-background-job-processing-library.html" rel="alternate" type="text/html" title="Introducing Ant: a simple background job processing library for Elixir" /><published>2025-01-06T07:00:00+01:00</published><updated>2025-01-06T07:00:00+01:00</updated><id>http://localhost:4000/ant-background-job-processing-library</id><content type="html" xml:base="http://localhost:4000/ant-background-job-processing-library.html"><![CDATA[<p>In the Elixir community we are lucky to have a lot of great quality libraries backed by not only by core engineers, but also by the strong community. I use Elixir on a daily basis not only for my work, but also for my personal projects and never feel like I’m missing something crucial. At least in the web development area.</p>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Introducing Ant: a simple background job processing library for Elixir </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/post_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/elixir.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/ruby.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/yml.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <meta name="author" content="Mike Andrianov">
+  <meta name="description" content="In this post, we will explore Ant, my new background job processing library for Elixir, designed with simplicity in mind. It is built on Mnesia as a storage solution and includes retry mechanisms out of the box.">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KED8YMLD5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KED8YMLD5');
+</script>
+
+
+<body>
+  <header class="container clearfix">
+    <nav>
+  <label for="hamburger" class="float-right">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+
+  <div id="nav_items">
+    
+      <a href=/ class="button button-clear">Home</a>
+    
+      <a href=/blog class="button button-clear">Blog</a>
+    
+      <a href=/about class="button button-clear">About</a>
+    
+  </div>
+</nav>
+
+  </header>
+
+  <article class="container">
+    <center><h1 class="mb-8">Introducing Ant: a simple background job processing library for Elixir</h1></center>
+    <p>In the Elixir community we are lucky to have a lot of great quality libraries backed by not only by core engineers, but also by the strong community. I use Elixir on a daily basis not only for my work, but also for my personal projects and never feel like I’m missing something crucial. At least in the web development area.</p>
 
 <p>Nevertheless, recently I have decided to publish my new library called <a href="https://github.com/MikeAndrianov/ant">Ant</a> for background job processing.</p>
 
@@ -285,370 +338,24 @@ It’s significantly less popular storage solution. There are no nearly as many 
 For further development I would like to hear your feedback. What you would like to see in the future versions of the library? What is crucial for you to start using it? <a href="mailto:mikeandrianov@gmail.com">Please share your thoughts with me through the email</a>.</p>
 
 <p><br />
-You can find <a href="https://github.com/MikeAndrianov/ant">Ant on the Github</a>. Thank you for reading my article.</p>]]></content><author><name></name></author><category term="elixir" /><summary type="html"><![CDATA[In this post, we will explore Ant, my new background job processing library for Elixir, designed with simplicity in mind. It is built on Mnesia as a storage solution and includes retry mechanisms out of the box.]]></summary></entry><entry><title type="html">Overcoming irregular delivery</title><link href="http://localhost:4000/overcoming-irregular-delivery.html" rel="alternate" type="text/html" title="Overcoming irregular delivery" /><published>2024-02-01T01:45:00+01:00</published><updated>2024-02-01T01:45:00+01:00</updated><id>http://localhost:4000/overcoming-irregular-delivery</id><content type="html" xml:base="http://localhost:4000/overcoming-irregular-delivery.html"><![CDATA[<p>Lately, my mentee and I have been focused on enhancing impact within the team. One goal we set was to improve reliability and visibility by starting to deliver regularly. 
-Ideally, we would be delivering at least one commit daily even though it doesn’t necessarily mean to close a new ticket each day.</p>
-
-<p>To assist my mentee in overcoming potential obstacles that might stop him from accomplishing the goal, I have created a diagram, which I decided to share with the wider audience as I believe it can be useful for more engineers.</p>
-
-<p>I broke the abstract “can’t commit daily” question into the 3 main sections:</p>
-
-<ol>
-  <li>
-    <p><strong>Problems</strong> <br />
-What prevents engineers from regular delivery. Often, these are the responses you’d receive when inquiring about the delay in completing a feature.</p>
-  </li>
-  <li>
-    <p><strong>Root causes</strong> <br />
-Identifying the root causes that give rise to issues in the delivery process.</p>
-  </li>
-  <li>
-    <p><strong>Solutions</strong> <br />
-Offering practical solutions for addressing each of the identified root causes. These serve as recipes for overcoming the challenges associated with regular delivery.</p>
-  </li>
-</ol>
-
-<p><a href="/assets/img/irregular-delivery-diagram.png"><img src="/assets/img/irregular-delivery-diagram.png" alt="Irregular delivery diagram" /></a></p>
-
-<h2 id="problem-1-tickets-complexity">Problem 1. Ticket’s complexity</h2>
-
-<p>Addressing this challenge can indeed be tricky, and it requires a thorough identification of the root causes.
-Let’s go through the most popular root causes one by one.</p>
-
-<h3 id="1-unclear-requirements">1. <strong>Unclear requirements</strong></h3>
-<p>Engineer dove into feature development without a comprehensive understanding of the outcome, resulting in numerous iterations or, in extreme cases, 
-the need for complete rebuilding of the delivered work. 
-Ideally, initiating work should only commence when the final goal is crystal clear, well-understood, and logically sound. 
-Depending on the feature, it may be beneficial to also include such things as the acceptance criteria, development breakdown, link to the design, etc.</p>
-
-<p><strong>Solution:</strong> don’t be shy and seek input from relevant colleagues, including product managers, designers, other developers, and stakeholders. Don’t hesitate to request additional details until the requirements are thoroughly clarified.
-Proactively seek input from relevant colleagues, including product managers, designers, fellow developers, and stakeholders. Don’t hesitate to request additional details until the requirements are thoroughly clarified. 
-Open communication ensures a comprehensive understanding of the project, reducing the likelihood of ambiguity and facilitating smoother development processes.</p>
-
-<h3 id="2-ticket-is-too-big">2. <strong>Ticket is too big</strong></h3>
-<p>In some cases, a ticket may be well-defined from a business perspective, yet engineers working on it might encounter challenges with the delivery. 
-Some people may develop locally and only commit changes when they finish the ticket. 
-Additionally, based on my observations, the review process tends to slow down as the size of the corresponding pull request increases. 
-This, in turn, can lead to a prolonged period of stagnation in the review phase.</p>
-
-<p><strong>Solution:</strong> break down large tickets into smaller, more granular tasks, which are easier to understand, implement, review, and test.</p>
-
-<h3 id="3-ticket-is-too-difficult">3. <strong>Ticket is too difficult</strong></h3>
-<p>Even if a ticket is exceptionally well-defined, there are instances where it’s too challenging for the assigned individual to tackle it alone.</p>
-
-<p><strong>Solution:</strong> discuss with colleagues implementation details and set milestones. When necessary ask for the review while the pool request is still a draft.</p>
-
-<h2 id="problem-2-stuck-or-blocked">Problem 2. Stuck or blocked</h2>
-<p>Working in an environment of uncertainty is common, with potential issues like buggy libraries, missing documentation, and complex codebases. 
-Recognizing the right time to seek help is crucial to avoid unnecessary time wastage. 
-Please keep in mind, that before asking you did everything you could to resolve the problem by your own: 
-from googling and usage of AI tools to reading library and internal documentation. Asking for help should be the next step after giving your best shot at solving the problem independently.</p>
-
-<p><strong>Solution:</strong> ask for help.</p>
-
-<p>There are a couple of tricks to keep in mind, and how to do it properly to receive necessary help faster and effectively:</p>
-
-<ol>
-  <li>
-    <p><strong>Ask questions in public channels instead of pinging people directly</strong> <br />
-It increases the probability of resolving problems faster and also increases visibility. 
-That means a wider audience will know about your current status. This is especially important when working remotely.</p>
-  </li>
-  <li>
-    <p><strong>Specify as much information as possible</strong> <br />
-Don’t be afraid to overcommunicate. It’s always better to provide more information, rather than less. Please keep in mind, that other people need to understand the context and the problem quickly.
-Not everyone is eager to play ping-pong with additional questions and answers. So try to prevent it.
-Write an extensive description of what you have done so far, your conclusions, or suspicions. Share links to the ticket, code, logs, etc.</p>
-  </li>
-  <li>
-    <p><strong>Be proactive</strong> <br />
-After all you are responsible for resolving your issues. If nobody helps, don’t reassure yourself that you asked and can rest until someone finally help you. 
-Ping your team members, ask question in different channels, send follow-ups, do everything you can to facilitate resolving the issue.</p>
-  </li>
-</ol>
-
-<p><br />
-Do you struggle with something else and don’t know how to deal with it? <a href="mailto:mikeandrianov@gmail.com">Send me an email</a>. Perhaps I could help. It’s always worth asking.</p>]]></content><author><name></name></author><category term="mentorship" /><summary type="html"><![CDATA[What are the main problems, and root causes of non-regular delivery, and how do start delivering consistently as a software engineer? You can find answers in this article.]]></summary></entry><entry><title type="html">Why seniors often reject proposals from less experienced colleagues</title><link href="http://localhost:4000/why-do-seniors-reject-new-ideas.html" rel="alternate" type="text/html" title="Why seniors often reject proposals from less experienced colleagues" /><published>2023-11-26T01:45:00+01:00</published><updated>2023-11-26T01:45:00+01:00</updated><id>http://localhost:4000/why-do-seniors-reject-new-ideas</id><content type="html" xml:base="http://localhost:4000/why-do-seniors-reject-new-ideas.html"><![CDATA[<blockquote>
-  <p>“It’s so annoying to work with senior developers in my team. I encourage them to try to introduce a new technology / framework / approach, but they always push back, like they don’t want anything.”</p>
-</blockquote>
-
-<p>From time to time I hear such complains. They usually come from frustrated junior or mid-level developers.
-These individuals, having already gained some experience and managing daily tasks competently, possess a keen motivation to expand their skill sets further.
-Eagerness to explore new tools is commendable, but it’s essential to comprehend why seasoned professionals might resist these suggestions.
-Let’s assume you don’t work with crazy people. If this is the case, let’s explore potential reasons behind the rejection of your proposals.</p>
-
-<h3 id="reasons-why-your-proposals-may-be-rejected">Reasons why your proposals may be rejected:</h3>
-
-<ol>
-  <li>
-    <p><strong>Hiring and technological diversity challenges</strong> <br />
-Consider a scenario: your product is primarily developed in Python, and you propose implementing one or more microservices using Go.
-While experimenting with new technologies is exciting, envision the implications a year down the line when the project hosts
-a multitude of microservices built on different programming languages like Python, Go, Elixir, Rust, NodeJS, and more.
-This might lead to complexities in hiring new talent, issues with code quality, and the readiness of developers (especially less experienced)
-to navigate diverse technologies for troubleshooting. Ultimately, business objectives may prioritize stability over unchecked experimentation.</p>
-  </li>
-  <li>
-    <p><strong>Time and financial investment for technology adoption</strong> <br />
-Adopting a new tool demands more than personal learning; it entails team-wide integration.
-Consequently, business owners may need to invest resources in training employees for effective adoption, diverting focus
-and capital from developing new functionality or resolving accumulated problems.</p>
-  </li>
-  <li>
-    <p><strong>Initial development slowdown</strong> <br />
-Introducing new technology typically causes a temporary slowdown in development speed.
-Acclimating to a new ecosystem involves understanding coding practices, patterns, and libraries, which can impact productivity in the short term.</p>
-  </li>
-  <li>
-    <p><strong>Deployment complexities</strong> <br />
-Consider a company utilizing a standardized deployment method in Python, perhaps with some Docker template.
-Introducing a new technology not only demands developers’ attention but also requires DevOps involvement in setting up and deploying this new system.</p>
-  </li>
-</ol>
-
-<p>We could go on and on, but I hope the idea is clear.
-Sometimes, what may seem like a lack of enthusiasm from experienced seniors could actually be a strategic approach to anticipate and prevent potential future issues.
-Their cautious approach might stem from a desire to foresee challenges and maintain stability in the long run.</p>
-
-<h3 id="how-to-navigate-this-situation">How to navigate this situation?</h3>
-
-<p>I hope I didn’t upset you too much and didn’t discourage you with my rumbling.<br />
-Here’s some advice: master the art of persuasion.
-Instead of simply suggesting, “Let’s explore Go for our new service — it’s fun!”, focus on creating a compelling case.
-Start by identifying the pain points your team currently faces with existing technologies.
-Explain precisely how adopting the new technology can address these issues. Describe the advantages and disadvantages of its integration.
-Sometimes, even if your team appreciates the idea, other pressing priorities might not allow adopting your suggestion.
-Therefore, prepare yourself to refine your abilities and experiment with new tools in your personal projects.
-It becomes even more impressive if your experimentation extends beyond localhost and results in deployment
-to a production environment, perhaps even attracting some real users.
-This not only improves your technical skills but also provides insights into product development, marketing strategies, and other areas.
-Broader perspective can substantially boost your career in the future.</p>
-
-<p>Questions or thoughts? Please feel free to <a href="mailto:mikeandrianov@gmail.com">drop me a letter</a>.</p>]]></content><author><name></name></author><category term="opinion" /><summary type="html"><![CDATA[Here's my take on why seasoned developers often turn down suggestions from less experienced colleagues, along with some guidance on how to navigate this situation.]]></summary></entry><entry><title type="html">Static website creation on Jekyll with ease</title><link href="http://localhost:4000/create-static-website-with-jekyll.html" rel="alternate" type="text/html" title="Static website creation on Jekyll with ease" /><published>2023-07-01T23:31:51+02:00</published><updated>2023-07-01T23:31:51+02:00</updated><id>http://localhost:4000/create-static-website-with-jekyll</id><content type="html" xml:base="http://localhost:4000/create-static-website-with-jekyll.html"><![CDATA[<p>I’ve always enjoyed sharing my knowledge, thoughts, and ideas with others. As soon as I matured as a software engineer, I decided to create an account on Medium and start writing about topics that intrigued me and could be of interest to others.</p>
-
-<p>However, nowadays more and more content becomes hidden behind the paywall. This led me to seek an alternative platform for my humble content.
-Although I typically prefer ready-made solutions over reinventing the wheel, this time though
-I felt the urge to redesign my personal website for the first time in ten years of its existence. The idea of creating a small static website with personal information and a blog seemed fitting.
-Being an experienced Ruby (and Rails) developer, I was thrilled to leverage my acquired knowledge and finally craft a <a href="https://www.youtube.com/watch?v=Gzj723LkRJY">blog in 15 minutes</a>! Just before writing the cherished <code class="language-plaintext highlighter-rouge">rails new blog</code>, I swiftly researched on out-of-the-box solutions for static websites. Why invest 15 minutes when merely 5 minutes could suffice with the aid of a specific tool? Of course, neither 5 nor 15 minutes can yield something truly meaningful, but you got the idea, right?</p>
-
-<p>I formulated the next criteria:</p>
-<ol>
-  <li>
-    <p><strong>Lightweight and easy to use</strong> <br />
-Something, which allows to hit the ground running without spending too much time reading
-documentation.</p>
-  </li>
-  <li>
-    <p><strong>Easy to host</strong> <br />
-I host my page on GitHub pages and ideally wanted to continue as this is more than enough for
-my needs.</p>
-  </li>
-  <li>
-    <p><strong>Customizable</strong> <br />
-Maybe tomorrow I will add another page with a nice-looking gallery with images of unicorns. Who knows.</p>
-  </li>
-</ol>
-
-<p>Once I crystallized these criteria, the answer poped out from my mind. I have read about
-<a href="https://jekyllrb.com">Jekyll</a> some time ago. It turned out it was a great candidate that met my needs. The bonus point was
-that it is written in Ruby! Please don’t drop this article if you are not familiar with Ruby as it turned out that besides Ruby itself
-it only needed to install a gem and start the project:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">gem</span> <span class="n">install</span> <span class="n">bundler</span> <span class="n">jekyll</span>
-  <span class="n">jekyll</span> <span class="n">new</span> <span class="n">my</span><span class="o">-</span><span class="n">site</span>
-  <span class="n">cd</span> <span class="n">my</span><span class="o">-</span><span class="n">site</span>
-  <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span> <span class="o">--</span><span class="n">livereload</span></code></pre></figure>
-
-<p>“Why choose Jekyll over writing plain HTML?” you may wonder. Because it supports some convenient features, which simplify development:
-layouts, templates with Liquid, ability to create content not only in HTML, but also using Markdown and the easiest deployment
-to GitHub pages. Let’s go through everything in order.</p>
-
-<h3 id="pages">Pages</h3>
-
-<p>The most essential part of building a static website. They can be written in HTML or Markdown.
-Some examples of pages: <code class="language-plaintext highlighter-rouge">index.html</code>, <code class="language-plaintext highlighter-rouge">blog.html</code>, <code class="language-plaintext highlighter-rouge">about.markdown</code>, etc. Just drop these files into
-the root of the project. Also, pages can also be organized into subfolders, if some organization is required.</p>
-
-<h3 id="configuration">Configuration</h3>
-
-<p>Basic configuration can be set in <code class="language-plaintext highlighter-rouge">_config.yml</code>. Sometimes it’s needed to set a custom configuration for a specific page or post.
-For such cases, Jekyll provides the tool called Front Matter. It can be used for setting predefined global variables like
-title and layout, as well as any other custom variable you need.</p>
-
-<p>To implement Front Matter, place YAML-formatted configurations at the top of the page, encased within three-dashed lines:</p>
-
-<p>about.html</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
-<span class="ss">layout: </span><span class="n">default</span>
-<span class="ss">title: </span><span class="no">Custom</span> <span class="n">title</span>
-<span class="ss">header: </span><span class="no">About</span>
-<span class="o">---</span>
-
-<span class="o">&lt;</span><span class="n">article</span><span class="o">&gt;</span>
-  <span class="no">About</span> <span class="n">me</span>
-<span class="o">&lt;</span><span class="sr">/article&gt;</span></code></pre></figure>
-
-<h3 id="includes">Includes</h3>
-
-<p>Repeatetive chunks of code can be extracted and organized within the <code class="language-plaintext highlighter-rouge">_includes</code> directory and included wherever needed.
-Here are couple of examples of what make sense to move there: navigation, email subscription form, footer and so on.
-Use <code class="language-plaintext highlighter-rouge">include</code> or <code class="language-plaintext highlighter-rouge">include_relative</code> directives to insert partial into the page.</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">...
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;header&gt;</span>
-    {% include nav.html %}
-  <span class="nt">&lt;/header&gt;</span>
-  ...
-<span class="nt">&lt;/body&gt;</span></code></pre></figure>
-
-<h3 id="liquid-templates">Liquid templates</h3>
-
-<p>While reading the example above you might wonder about the usage of <code class="language-plaintext highlighter-rouge">{% ... %}</code>. Indeed, this doesn’t
-look like a pure HTML.
-And you are right: Jekyll uses open-source template language called Liquid.
-If you’re unfamiliar with it, all you need to know is that variables enclosed within double curly brackets, such as
-<code class="language-plaintext highlighter-rouge">{{ page.title }}</code> will be rendered on a page. The code situated between curly bracket and percent
-<code class="language-plaintext highlighter-rouge">{% if author %}</code> is not displayed on the page, but is used as control flow structure. More information
-you can find in <a href="https://shopify.github.io/liquid">the official documentation</a>.</p>
-
-<h3 id="layouts">Layouts</h3>
-
-<p>Serve for containing basic repetitive code for pages, wrap content from pages. Loading of all necessary css and js files
-is done there. For instance, consider the following layout template:</p>
-
-<p>_layouts/default.html</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;title&gt;</span>{{ page.title }}<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/assets/css/styles.css"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;header&gt;</span>
-    {% include navigation.html %}
-
-    <span class="nt">&lt;h2&gt;</span>{{page.header}}<span class="nt">&lt;/h2&gt;</span>
-  <span class="nt">&lt;/header&gt;</span>
-
-  {{ content }}
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span></code></pre></figure>
-
-<p>The content of a page will be rendered in place of <code class="language-plaintext highlighter-rouge">{{ content }}</code> variable.</p>
-
-<h3 id="variables">Variables</h3>
-
-<p>Any file that includes Front Matter, is processed by Jekyll, allowing to use variables in your templates.
-Here are main types of variables:</p>
-
-<ol>
-  <li>
-    <p><strong>site</strong> <br />
-This variable contains configuration elements sourced from <code class="language-plaintext highlighter-rouge">_config.yml</code> as well as global information.
-Here are example of what can be accessed through it: <code class="language-plaintext highlighter-rouge">site.data</code> – data loaded from the <code class="language-plaintext highlighter-rouge">_data</code> directory,
-<code class="language-plaintext highlighter-rouge">site.pages</code>, <code class="language-plaintext highlighter-rouge">site.posts</code>, <code class="language-plaintext highlighter-rouge">site.&lt;config&gt;</code> and so on.</p>
-  </li>
-  <li>
-    <p><strong>paginator</strong> <br />
-Is used for simplifying work with pagination: <code class="language-plaintext highlighter-rouge">paginator.page</code>, <code class="language-plaintext highlighter-rouge">paginator.total_pages</code>, <code class="language-plaintext highlighter-rouge">paginator.next_page</code>, etc.</p>
-  </li>
-  <li>
-    <p><strong>page</strong> <br />
-Is used for storing page-specific information. Any data specified via Front Matter in a given page resides within this variable.</p>
-  </li>
-</ol>
-
-<p>about.html</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">---</span>
-<span class="ss">title: </span><span class="no">Custom</span> <span class="n">title</span>
-<span class="ss">header: </span><span class="no">About</span>
-<span class="o">---</span>
-
-<span class="o">&lt;</span><span class="n">article</span><span class="o">&gt;</span>
-  <span class="no">About</span> <span class="n">me</span>
-<span class="o">&lt;</span><span class="sr">/article&gt;
-...</span></code></pre></figure>
-
-<p>Later specified variables can be accessed like so:</p>
-
-<p>_layouts/default.html</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;title&gt;</span> {{ page.title }} <span class="nt">&lt;/title&gt;</span>
-  ...
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;h2&gt;</span>{{page.header}}<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;/body&gt;</span></code></pre></figure>
-
-<h3 id="data">Data</h3>
-
-<p>You can create custom data files (in JSON, YAML, CSV, and TSV formats), which should be located in <code class="language-plaintext highlighter-rouge">_data</code> directory.
-Later inside pages it can be accessed via <code class="language-plaintext highlighter-rouge">site.data</code> variable.
-Let’s think about when it may be useful.
-Consider a situation where you wish to incorporate a special gallery featuring unicorns. By creating a dedicated data file
-for these unicorn profiles, you can maintain a structured repository of details that can be nicely integrated into your pages.</p>
-
-<p>_data/unicorns.yml</p>
-
-<figure class="highlight"><pre><code class="language-yml" data-lang="yml">  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Bob</span>
-    <span class="na">img</span><span class="pi">:</span> <span class="s">imgs/bob_unicorn.jpg</span>
-    <span class="na">about</span><span class="pi">:</span> <span class="s">Likes walking in the forrest.</span>
-  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Patricia</span>
-    <span class="na">img</span><span class="pi">:</span> <span class="s">imgs/patricia_unicorn.jpg</span>
-    <span class="na">about</span><span class="pi">:</span> <span class="s">Used to live in mountains.</span>
-  <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Kyle Jr</span>
-    <span class="na">img</span><span class="pi">:</span> <span class="s">imgs/kyle_unicorn.jpg</span>
-    <span class="na">about</span><span class="pi">:</span> <span class="s">Eats grass and pine cones.</span></code></pre></figure>
-
-<p>index.html</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">{% for unicorn in site.data.unicorns %}
-  <span class="nt">&lt;div&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>{{ unicorn.name }}<span class="nt">&lt;/h1&gt;</span>
-    <span class="nt">&lt;p&gt;</span>{{ unicorn.about }}<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">{{</span> <span class="na">unicorn.img</span> <span class="err">}}</span> <span class="err">\</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-{% endfor %}</code></pre></figure>
-
-<h3 id="posts">Posts</h3>
-
-<p>Jekyll offers a straightforward method for creating a blog. Just drop HTML or Markdown files into <code class="language-plaintext highlighter-rouge">_posts</code> directory. Files
-should be named in a specific format: <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code>, or <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.html</code>. At the top of the most, you can
-also use Front Matter:</p>
-
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
-<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
-<span class="na">title</span><span class="pi">:</span>  <span class="s">Static website creation on Jekyll with ease</span>
-<span class="na">date</span><span class="pi">:</span>   <span class="s">2023-07-01 23:31:51 +0200</span>
-<span class="na">categories</span><span class="pi">:</span> <span class="s">static websites</span>
-<span class="nn">---</span>
-
-<span class="s">Some **useful** content.</span></code></pre></figure>
-
-<p>Now it’s time to render posts.</p>
-
-<p>blog.html</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html">{% for post in site.posts %}
-  <span class="nt">&lt;article&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">{{</span> <span class="na">post.url</span> <span class="err">}}</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;h1&gt;</span>{{ post.title }}<span class="nt">&lt;/h1&gt;</span>
-      <span class="nt">&lt;p&gt;</span>{{ post.excerpt }}<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;/article&gt;</span>
-{% endfor %}</code></pre></figure>
-
-<h3 id="deployment">Deployment</h3>
-
-<p>It turned out GitHub pages support Jekyll out of the box. Simply commit and push all your changes.
-Everything else will handled by GitHub. Nice and easy!</p>
-
-<p><br />
-That’s all what I wanted to share today. Thank you for reading my post.
-If you are interested in diving a bit deeper, I highly recomend to check out
-<a href="https://jekyllrb.com/docs/">official documentation</a>.</p>]]></content><author><name></name></author><category term="static" /><category term="websites" /><summary type="html"><![CDATA[Exploring my transition from Medium to a personal Jekyll-powered blog. Take a look if you want to effortlessly create a static website. You will find all the basics to get familiar with this tool.]]></summary></entry></feed>
+You can find <a href="https://github.com/MikeAndrianov/ant">Ant on the Github</a>. Thank you for reading my article.</p>
+
+  </article>
+
+  <div class="container">
+  <form action="https://github.us21.list-manage.com/subscribe/post?u=be4c1059a647a4bcd23bf6166&amp;id=f27589f2ab&amp;f_id=007ea0e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_self">
+    <div id="mc_embed_signup_scroll">
+      <small>Subscribe to my future posts</small>
+
+      <div class="row">
+        <input type="email" value="" placeholder="Type your email…" name="EMAIL" class="subscribe-input" id="mce-EMAIL" required>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-outline subscribe-button">
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_be4c1059a647a4bcd23bf6166_f27589f2ab" tabindex="-1" value=""></div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
