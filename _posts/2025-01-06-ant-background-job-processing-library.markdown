@@ -30,7 +30,7 @@ I was eager to try to apply it to my personal needs and decided to create a libr
 
 ### How to use Ant
 
-I always prefer to explain by real-world examples. So let's imagine that we have a with leads and we need to send an email to each of them.
+I always prefer to explain by real-world examples. So let's imagine that we have a file with leads and we need to send an email to each of them.
 This task can be broken down into several steps:
 1. Create a file with `400_000` rows to **create leads**
 2. **Parse the generated file**
